@@ -16,7 +16,7 @@ def parse_args() -> tuple[int, list[int]]:
     parser.add_argument("floor", type=str, help="Comma-separated list of floors like this: floor=<int,int,...>")
     args = parser.parse_args()
 
-    # Check args for incorrect format
+    # Check start floor for incorrect format
     if not args.start.startswith("start="):
         raise ValueError("Invalid format for start floor. Use start=<int>")
 
