@@ -1,4 +1,5 @@
 from elevator import Elevator
+from summary import Summary
 from trip import Trip
 import argparse
 
@@ -35,11 +36,11 @@ def parse_args() -> tuple[int, list[int]]:
 
 def main():
     try:
-        start_floor, floors_to_visit = parse_args()
-        elevator = Elevator()
-        trip = Trip(start_floor, floors_to_visit)
-        result = elevator.do_trip(trip)
-        print(result)
+        start_floor, floors_to_visit = parse_args()  # Parse cli args
+        elevator: Elevator = Elevator()  # Instantiate an Elevator object
+        trip: Trip = Trip(start_floor, floors_to_visit)  # Instantiate a Trip object
+        result: Summary = elevator.do_trip(trip)  # call do_trip, store the resulting Summary instance
+        print(result)  # Call the Summary instance's _repr_ method
 
     except ValueError as e:
         print(f"Error: {e}")
