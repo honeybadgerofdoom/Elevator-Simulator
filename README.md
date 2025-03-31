@@ -3,6 +3,12 @@
 This project simulates an elevator. The time taken to travel between each floor is exactly 10 (seconds). Use this to
 calculate the time taken to travel between arbitrary floors using this elevator
 
+## Assumptions
+
+- The elevator always travels at the same speed
+- The elevator doesn't actually pause when it reaches a floor
+- The elevator turns around instantly, i.e. there is no time lost to transitioning from upwards to downwards movement
+
 ## Usage
 
 This project is built with `Python`, you'll need python installed locally to run it! It was built on `Python 3.11.0`
