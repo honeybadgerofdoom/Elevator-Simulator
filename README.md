@@ -8,6 +8,7 @@ calculate the time taken to travel between arbitrary floors using this elevator
 - The elevator always travels at the same speed
 - The elevator doesn't actually pause when it reaches a floor
 - The elevator turns around instantly, i.e. there is no time lost to transitioning from upwards to downwards movement
+- Floors are whole numbers. There are no fractional floors.
 
 ## Usage
 
@@ -19,3 +20,7 @@ This project is built with `Python`, you'll need python installed locally to run
 
 ### Example
 - `python3 main.py start=12 floor=2,9,1,32`
+
+## Testing
+
+- Run `python3 test.py` for some simple tests
