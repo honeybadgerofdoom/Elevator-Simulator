@@ -13,6 +13,7 @@ def main():
     print(f"Test 3: {test3[1]}")
     print(f"Test 4: {test4[1]}")
 
+
 def run_test(start: int, floors: list[int], expected: int) -> tuple[bool, str]:
     floor = ",".join(map(str, floors))
     test = ["python3", "main.py", f"start={start}", f"floor={floor}"]
